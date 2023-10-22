@@ -1,0 +1,168 @@
+@media only screen and (min-width: 768px) {
+    .brand-logo span {
+        font-size: 2.4rem;
+    }
+
+    .brand-logo img,
+    .social_links a img {
+        max-width: 4rem;
+    }
+
+    #humbergerBtn img {
+        max-width: 4rem;
+    }
+
+    .hero_img_wrapper {
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .hero_img_wrapper::after {
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 100%;
+        height: 100%;
+        background-color: var(--clr-primary);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        z-index: -1;
+
+        max-width: 465px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    section {
+        padding: 80px 0px;
+    }
+
+    /* navbar  */
+    .nav_links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav_link {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+
+    .nav_link:nth-child(even) {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+    }
+    .nav_links{
+        --link-title-fs: 3rem;
+    }
+
+    .nav_link a {
+        height: 100vh;
+    }
+    #closeBtn{
+        max-width: 40px;
+        top: 40px;
+        right: 40px;
+    }
+
+    #footer {
+        padding: 80px 0px;
+    }
+
+    .title {
+        --main-title-fs: 4rem;
+        --main-title-ls: 0.1rem;
+
+        --h2-title-fs: 3rem;
+        --h2-title-ls: 0.2rem;
+
+
+        --para-title-fs: 2rem;
+    }
+
+    .brand-logo span {
+        font-size: 3rem;
+    }
+
+    .brand-logo img {
+        max-width: 5rem;
+    }
+
+    #humbergerBtn img {
+        max-width: 5rem;
+    }
+
+    /* footer */
+    #footer .title {
+        --para-title-fs: 2rem;
+        --h6-title-fs: 2rem;
+        --h6-title-mb: 2rem;
+
+        --link-title-fs: 1.8rem;
+        --link-title-mb: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        --main-title-fs: 5rem;
+        --main-title-ls: 0.2rem;
+
+        --h2-title-fs: 4rem;
+
+
+        --para-title-fs: 2.4rem;
+    }
+
+    /* footer */
+    #footer .title {
+        --para-title-fs: 2.2rem;
+        --h6-title-fs: 2.2rem;
+        --h6-title-mb: 2.5rem;
+
+        --link-title-fs: 2rem;
+    }
+
+    #footer .brand-logo {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    section {
+        padding: 100px 0px;
+    }
+
+    .title {
+        --main-title-fs: 5.5rem;
+        --main-title-ls: 0.2rem;
+        --main-title-mb: 2rem;
+
+        --h2-title-fs: 4.5rem;
+        --h2-title-mb: 1.5rem;
+
+
+        --para-title-fs: 2.6rem;
+    }
+
+    /* footer */
+    #footer .title {
+        --para-title-fs: 2.4rem;
+        --h6-title-fs: 2.4rem;
+        --h6-title-mb: 3rem;
+
+        --link-title-fs: 2.2rem;
+    }
+
+    #footer .brand-logo {
+        margin-bottom: 3rem;
+    }
+}

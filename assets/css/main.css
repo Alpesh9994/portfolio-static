@@ -115,6 +115,9 @@ section {
 }
 
 /*  header start  */
+body.open-menu {
+    overflow: hidden;
+}
 
 #header {
     padding: 21px 0px;
